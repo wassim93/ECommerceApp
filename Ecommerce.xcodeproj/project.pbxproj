@@ -13,6 +13,17 @@
 		CFCD577326E97F95007BDE71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCD577226E97F95007BDE71 /* Preview Assets.xcassets */; };
 		CFCD577E26E97F95007BDE71 /* EcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD577D26E97F95007BDE71 /* EcommerceTests.swift */; };
 		CFCD578926E97F95007BDE71 /* EcommerceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD578826E97F95007BDE71 /* EcommerceUITests.swift */; };
+		CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD579C26E980EE007BDE71 /* Constant.swift */; };
+		CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD579F26E98264007BDE71 /* FooterView.swift */; };
+		CFCD57AB26E9899C007BDE71 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A226E9899B007BDE71 /* SFPRODISPLAYHEAVYITALIC.OTF */; };
+		CFCD57AD26E9899C007BDE71 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A426E9899B007BDE71 /* SFPRODISPLAYBLACKITALIC.OTF */; };
+		CFCD57AE26E9899C007BDE71 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A526E9899B007BDE71 /* SFPRODISPLAYBOLD.OTF */; };
+		CFCD57AF26E9899C007BDE71 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A626E9899C007BDE71 /* SFPRODISPLAYREGULAR.OTF */; };
+		CFCD57B026E9899C007BDE71 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A726E9899C007BDE71 /* SFPRODISPLAYMEDIUM.OTF */; };
+		CFCD57B126E9899C007BDE71 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57A826E9899C007BDE71 /* SFPRODISPLAYLIGHTITALIC.OTF */; };
+		CFCD57B326E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD57B426E9954E007BDE71 /* NavBarView.swift */; };
+		CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD57B626E99C6B007BDE71 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +56,17 @@
 		CFCD578426E97F95007BDE71 /* EcommerceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcommerceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCD578826E97F95007BDE71 /* EcommerceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceUITests.swift; sourceTree = "<group>"; };
 		CFCD578A26E97F95007BDE71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCD579C26E980EE007BDE71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CFCD579F26E98264007BDE71 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		CFCD57A226E9899B007BDE71 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
+		CFCD57A426E9899B007BDE71 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
+		CFCD57A526E9899B007BDE71 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		CFCD57A626E9899C007BDE71 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		CFCD57A726E9899C007BDE71 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		CFCD57A826E9899C007BDE71 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
+		CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		CFCD57B426E9954E007BDE71 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
+		CFCD57B626E99C6B007BDE71 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +117,13 @@
 		CFCD576A26E97F94007BDE71 /* Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
-				CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */,
-				CFCD576D26E97F94007BDE71 /* ContentView.swift */,
+				CFCD57A126E9897F007BDE71 /* Fonts */,
+				CFCD579B26E980A7007BDE71 /* Network */,
+				CFCD579A26E9807B007BDE71 /* App */,
+				CFCD579926E98060007BDE71 /* Extension */,
+				CFCD579826E98057007BDE71 /* Model */,
+				CFCD579726E9804A007BDE71 /* Utility */,
+				CFCD579626E98041007BDE71 /* Views */,
 				CFCD576F26E97F95007BDE71 /* Assets.xcassets */,
 				CFCD577426E97F95007BDE71 /* Info.plist */,
 				CFCD577126E97F95007BDE71 /* Preview Content */,
@@ -128,6 +155,76 @@
 				CFCD578A26E97F95007BDE71 /* Info.plist */,
 			);
 			path = EcommerceUITests;
+			sourceTree = "<group>";
+		};
+		CFCD579626E98041007BDE71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD579E26E9823F007BDE71 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CFCD579726E9804A007BDE71 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD579C26E980EE007BDE71 /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CFCD579826E98057007BDE71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFCD579926E98060007BDE71 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD57B626E99C6B007BDE71 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CFCD579A26E9807B007BDE71 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */,
+				CFCD576D26E97F94007BDE71 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CFCD579B26E980A7007BDE71 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CFCD579E26E9823F007BDE71 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD579F26E98264007BDE71 /* FooterView.swift */,
+				CFCD57B426E9954E007BDE71 /* NavBarView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CFCD57A126E9897F007BDE71 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CFCD57A426E9899B007BDE71 /* SFPRODISPLAYBLACKITALIC.OTF */,
+				CFCD57A526E9899B007BDE71 /* SFPRODISPLAYBOLD.OTF */,
+				CFCD57A226E9899B007BDE71 /* SFPRODISPLAYHEAVYITALIC.OTF */,
+				CFCD57A826E9899C007BDE71 /* SFPRODISPLAYLIGHTITALIC.OTF */,
+				CFCD57A726E9899C007BDE71 /* SFPRODISPLAYMEDIUM.OTF */,
+				CFCD57A626E9899C007BDE71 /* SFPRODISPLAYREGULAR.OTF */,
+				CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +330,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCD57AB26E9899C007BDE71 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
+				CFCD57AD26E9899C007BDE71 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
+				CFCD57B326E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
 				CFCD577326E97F95007BDE71 /* Preview Assets.xcassets in Resources */,
+				CFCD57AF26E9899C007BDE71 /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				CFCD57B126E9899C007BDE71 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */,
+				CFCD57AE26E9899C007BDE71 /* SFPRODISPLAYBOLD.OTF in Resources */,
+				CFCD57B026E9899C007BDE71 /* SFPRODISPLAYMEDIUM.OTF in Resources */,
 				CFCD577026E97F95007BDE71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +364,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */,
+				CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */,
+				CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */,
 				CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */,
+				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
+				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
