@@ -30,6 +30,10 @@
 		CFCD57B326E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
 		CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD57B426E9954E007BDE71 /* NavBarView.swift */; };
 		CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD57B626E99C6B007BDE71 /* Extensions.swift */; };
+		CFF752F526EAAE3D00E95667 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752F426EAAE3D00E95667 /* NetworkManager.swift */; };
+		CFF752F726EAAED300E95667 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752F626EAAED300E95667 /* Api.swift */; };
+		CFF752F926EAB4BF00E95667 /* RecommendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752F826EAB4BF00E95667 /* RecommendedView.swift */; };
+		CFF752FB26EAB69800E95667 /* RecommendedProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,10 @@
 		CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
 		CFCD57B426E9954E007BDE71 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		CFCD57B626E99C6B007BDE71 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CFF752F426EAAE3D00E95667 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CFF752F626EAAED300E95667 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		CFF752F826EAB4BF00E95667 /* RecommendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedView.swift; sourceTree = "<group>"; };
+		CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +230,8 @@
 		CFCD579B26E980A7007BDE71 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				CFF752F426EAAE3D00E95667 /* NetworkManager.swift */,
+				CFF752F626EAAED300E95667 /* Api.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -235,6 +245,8 @@
 				CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */,
 				CF16D9E226EA5EFE003CCCA0 /* BestSellingView.swift */,
 				CF16D9E426EA606E003CCCA0 /* ProductViewCell.swift */,
+				CFF752F826EAB4BF00E95667 /* RecommendedView.swift */,
+				CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -392,14 +404,18 @@
 				CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */,
 				CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */,
 				CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */,
+				CFF752F526EAAE3D00E95667 /* NetworkManager.swift in Sources */,
 				CF16D9E326EA5EFE003CCCA0 /* BestSellingView.swift in Sources */,
 				CF16D9E126EA4A21003CCCA0 /* HomeViewModel.swift in Sources */,
 				CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */,
 				CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */,
 				CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */,
 				CF16D9E526EA606E003CCCA0 /* ProductViewCell.swift in Sources */,
+				CFF752F926EAB4BF00E95667 /* RecommendedView.swift in Sources */,
+				CFF752FB26EAB69800E95667 /* RecommendedProductCell.swift in Sources */,
 				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
 				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
+				CFF752F726EAAED300E95667 /* Api.swift in Sources */,
 				CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

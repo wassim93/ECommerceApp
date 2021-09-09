@@ -1,5 +1,5 @@
 //
-//  BestSellingView.swift
+//  RecommendedView.swift
 //  Ecommerce
 //
 //  Created by wassim on 9/9/2021.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct BestSellingView: View {
+struct RecommendedView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             HStack {
-                Text("Best Selling")
+                Text("Recommended")
                     .font(Font.custom("SFProDisplay-Bold", size: 18))
                     .foregroundColor(.black)
                     .padding(15)
@@ -23,20 +23,19 @@ struct BestSellingView: View {
                         .padding(15)
                 })
             }
-            ScrollView(.horizontal,showsIndicators: false) {
-                LazyHStack(spacing:0) {
-                    ForEach(0...12, id:\.self) { index in
-                        ProductViewCell()
-                    }
+            TabView{
+                ForEach(0...12, id:\.self) { index in
+                    RecommendedProductCell()
                 }
-            }.frame(height: 250)
+            }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            .frame(height:280)
         }
     }
 }
 
-struct BestSellingView_Previews: PreviewProvider {
+struct RecommendedView_Previews: PreviewProvider {
     static var previews: some View {
-        BestSellingView()
+        RecommendedView()
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

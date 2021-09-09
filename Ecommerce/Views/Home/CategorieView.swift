@@ -11,7 +11,7 @@ struct CategorieView: View {
     
     @ObservedObject var hvm:HomeViewModel = HomeViewModel()
     var body: some View {
-        VStack(alignment: .leading, spacing: 20){
+        VStack(alignment: .leading, spacing: 0){
             Text("Categories")
                 .font(Font.custom("SFProDisplay-Bold", size: 18))
                 .foregroundColor(.black)
@@ -23,8 +23,8 @@ struct CategorieView: View {
                         CategorieCellView(categorie: cat)
                     }
                 }
-            }.frame(height: 100)
-            .padding(8)
+            }.frame(height: 120)
+            .padding([.trailing,.leading,.top],8)
          
         }
     }

@@ -13,10 +13,8 @@ struct ContentView: View {
             VStack(spacing:10){
                 ScrollView{
                     NavBarView()
-                        .padding(.bottom)
-                        .padding(.horizontal,5)
-                        .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
                     CategorieView()
+                    RecommendedView()
                     BestSellingView()
                 }
                 FooterView()

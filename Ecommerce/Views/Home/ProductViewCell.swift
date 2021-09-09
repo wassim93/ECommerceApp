@@ -10,12 +10,11 @@ import SwiftUI
 struct ProductViewCell: View {
     var body: some View {
         VStack(alignment:.leading,spacing:5){
-            
             ZStack {
                 Image("watch")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 120, height: 200, alignment: .center)
+                    .frame(width: 100, height: 150, alignment: .center)
                     .padding()
             }.background(colorGray)
             .cornerRadius(10)
