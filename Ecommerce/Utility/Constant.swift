@@ -10,6 +10,12 @@ import SwiftUI
 
 //DATA
 
+let categoriesData:[Categorie] = [.init(id: 1, name: "Men", image: "Icon_User"),
+                              .init(id: 2, name: "Women", image: "Icon_Womens"),
+                              .init(id: 3, name: "Devices", image: "Icon_Devices"),
+                              .init(id: 4, name: "Gadgets", image: "Icon_Gadgets"),
+                              .init(id: 5, name: "Gaming", image: "Icon_Gaming")]
+
 
 //COLOR
 
@@ -24,7 +30,6 @@ let appBackgroundMainColor:Color = Color(hex: "FDFDFD")
 
 //UX
 
-//API
 
 //IMAGE
 

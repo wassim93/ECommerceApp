@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */; };
+		CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */; };
+		CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */; };
+		CF16D9E126EA4A21003CCCA0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9E026EA4A21003CCCA0 /* HomeViewModel.swift */; };
 		CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */; };
 		CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD576D26E97F94007BDE71 /* ContentView.swift */; };
 		CFCD577026E97F95007BDE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCD576F26E97F95007BDE71 /* Assets.xcassets */; };
@@ -44,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieView.swift; sourceTree = "<group>"; };
+		CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieCellView.swift; sourceTree = "<group>"; };
+		CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
+		CF16D9E026EA4A21003CCCA0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CFCD576826E97F94007BDE71 /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceApp.swift; sourceTree = "<group>"; };
 		CFCD576D26E97F94007BDE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF16D9DF26EA4A0B003CCCA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF16D9E026EA4A21003CCCA0 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CFCD575F26E97F94007BDE71 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +133,7 @@
 		CFCD576A26E97F94007BDE71 /* Ecommerce */ = {
 			isa = PBXGroup;
 			children = (
+				CF16D9DF26EA4A0B003CCCA0 /* ViewModel */,
 				CFCD57A126E9897F007BDE71 /* Fonts */,
 				CFCD579B26E980A7007BDE71 /* Network */,
 				CFCD579A26E9807B007BDE71 /* App */,
@@ -176,6 +193,7 @@
 		CFCD579826E98057007BDE71 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,6 +227,8 @@
 			children = (
 				CFCD579F26E98264007BDE71 /* FooterView.swift */,
 				CFCD57B426E9954E007BDE71 /* NavBarView.swift */,
+				CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */,
+				CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -363,12 +383,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */,
+				CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */,
 				CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */,
+				CF16D9E126EA4A21003CCCA0 /* HomeViewModel.swift in Sources */,
 				CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */,
 				CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */,
 				CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */,
 				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
 				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
+				CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

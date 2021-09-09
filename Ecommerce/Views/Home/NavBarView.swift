@@ -20,10 +20,10 @@ struct NavBarView: View {
                     .padding(.horizontal,35)
             }.background(colorGrayInput)
             .cornerRadius(30)
-            .padding([.leading],16)
+            .padding([.leading],10)
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Image("Search_Camera")
-            }).padding(.trailing,16)
+            }).padding(.trailing,10)
 
         }.shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 5)
     }

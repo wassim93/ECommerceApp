@@ -10,10 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            VStack(spacing:0){
+            VStack(spacing:10){
                 NavBarView()
+                    .padding(.bottom)
                     .padding(.horizontal,5)
                     .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+                CategorieView()
                 Spacer()
                 FooterView()
                     .padding(.horizontal,0)
