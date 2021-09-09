@@ -11,6 +11,8 @@
 		CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */; };
 		CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */; };
 		CF16D9E126EA4A21003CCCA0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9E026EA4A21003CCCA0 /* HomeViewModel.swift */; };
+		CF16D9E326EA5EFE003CCCA0 /* BestSellingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9E226EA5EFE003CCCA0 /* BestSellingView.swift */; };
+		CF16D9E526EA606E003CCCA0 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9E426EA606E003CCCA0 /* ProductViewCell.swift */; };
 		CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */; };
 		CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCD576D26E97F94007BDE71 /* ContentView.swift */; };
 		CFCD577026E97F95007BDE71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCD576F26E97F95007BDE71 /* Assets.xcassets */; };
@@ -52,6 +54,8 @@
 		CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieCellView.swift; sourceTree = "<group>"; };
 		CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
 		CF16D9E026EA4A21003CCCA0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		CF16D9E226EA5EFE003CCCA0 /* BestSellingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellingView.swift; sourceTree = "<group>"; };
+		CF16D9E426EA606E003CCCA0 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
 		CFCD576826E97F94007BDE71 /* Ecommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFCD576B26E97F94007BDE71 /* EcommerceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceApp.swift; sourceTree = "<group>"; };
 		CFCD576D26E97F94007BDE71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				CFCD57B426E9954E007BDE71 /* NavBarView.swift */,
 				CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */,
 				CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */,
+				CF16D9E226EA5EFE003CCCA0 /* BestSellingView.swift */,
+				CF16D9E426EA606E003CCCA0 /* ProductViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -386,10 +392,12 @@
 				CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */,
 				CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */,
 				CFCD576E26E97F94007BDE71 /* ContentView.swift in Sources */,
+				CF16D9E326EA5EFE003CCCA0 /* BestSellingView.swift in Sources */,
 				CF16D9E126EA4A21003CCCA0 /* HomeViewModel.swift in Sources */,
 				CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */,
 				CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */,
 				CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */,
+				CF16D9E526EA606E003CCCA0 /* ProductViewCell.swift in Sources */,
 				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
 				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
 				CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */,

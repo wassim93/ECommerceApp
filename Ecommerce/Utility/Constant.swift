@@ -20,10 +20,14 @@ let categoriesData:[Categorie] = [.init(id: 1, name: "Men", image: "Icon_User"),
 //COLOR
 
 let colorBackground:Color = Color("ColorBackground")
-let colorGray:Color = Color(UIColor.systemGray4)
+let colorGray:Color = Color(hex: "F1F1F1")
 let colorGrayInput:Color = Color(hex: "F7F7F7")
 let colorWhite:Color = Color(.white)
 let appBackgroundMainColor:Color = Color(hex: "FDFDFD")
+let greenColor:Color = Color(hex: "00C569")
+let colorGrayCaption:Color = Color(hex: "929292")
+
+
 
 
 //LAYOUT

@@ -11,18 +11,18 @@ struct ContentView: View {
     var body: some View {
         ZStack{
             VStack(spacing:10){
-                NavBarView()
-                    .padding(.bottom)
-                    .padding(.horizontal,5)
-                    .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
-                CategorieView()
-                Spacer()
+                ScrollView{
+                    NavBarView()
+                        .padding(.bottom)
+                        .padding(.horizontal,5)
+                        .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+                    CategorieView()
+                    BestSellingView()
+                }
                 FooterView()
                     .padding(.horizontal,0)
             }.background(appBackgroundMainColor)
         }.ignoresSafeArea(.all,edges: [.top,.bottom])
-
-       
     }
 }
 
