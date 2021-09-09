@@ -16,7 +16,7 @@ struct ContentView: View {
                     CategorieView()
                     RecommendedView()
                     BestSellingView()
-                }
+                    }
                 FooterView()
                     .padding(.horizontal,0)
             }.background(appBackgroundMainColor)
