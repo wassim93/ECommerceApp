@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RecommendedView: View {
+    @ObservedObject var hvm:HomeViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             HStack {
@@ -24,8 +25,8 @@ struct RecommendedView: View {
                 })
             }
             TabView{
-                ForEach(0...12, id:\.self) { index in
-                    RecommendedProductCell()
+                ForEach(hvm.products.prefix(5)) { prod in
+                    RecommendedProductCell(product: prod)
                 }
             }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .frame(height:280)
@@ -35,7 +36,7 @@ struct RecommendedView: View {
 
 struct RecommendedView_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendedView()
+        RecommendedView(hvm: HomeViewModel())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

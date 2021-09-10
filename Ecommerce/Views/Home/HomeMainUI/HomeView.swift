@@ -13,7 +13,7 @@ struct HomeView: View {
         ScrollView{
             NavBarView()
             CategorieView()
-            RecommendedView()
+            RecommendedView(hvm: hvm)
             BestSellingView()
         }
     }

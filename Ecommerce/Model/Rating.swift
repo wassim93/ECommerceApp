@@ -16,6 +16,10 @@ struct Rating : Codable {
         case rate
         case count
     }
+    init(rate:Double,count:String) {
+        self.rate = rate
+        self.count = count
+    }
     
      init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

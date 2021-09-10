@@ -30,7 +30,6 @@ class HomeViewModel: ObservableObject {
             switch res{
                 case .success(let response) :
                     DispatchQueue.main.async {
-                        //print(response)
                         self.products = response
                     }
                 case .failure(let err):
