@@ -15,7 +15,7 @@ ECommerce App built with SwiftUI
 # Screenshots
 
     HomeScreen 
-<img src="https://github.com/wassim93/ECommerceApp/blob/main/Screenshots/home.gif" width=50% height=50%>
+<img src="https://github.com/wassim93/ECommerceApp/blob/main/Screenshots/home.gif">
     
     
     
