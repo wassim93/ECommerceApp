@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject var hvm:HomeViewModel = HomeViewModel()
+    @ObservedObject var hvm:HomeViewModel
     var body: some View {
         ScrollView(showsIndicators:false){
             NavBarView()
@@ -21,6 +21,6 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(hvm: HomeViewModel())
     }
 }

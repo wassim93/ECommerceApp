@@ -13,9 +13,10 @@ class HomeViewModel: ObservableObject {
     
     
     
+    
     init() {
         getCategories()
-        getRecommended()
+        getRecommended(limit: limitProductNumber)
     }
     
     
@@ -25,8 +26,8 @@ class HomeViewModel: ObservableObject {
     
     
     
-    func getRecommended() {
-        NetworkManager<Product>.fetch(for: URL(string: Api.productUrl)!) { (res) in
+    func getRecommended(limit:Int?) {
+        NetworkManager<Product>.fetch(for: URL(string: Api.getProducts(limit: limit))!) { (res) in
             switch res{
                 case .success(let response) :
                     DispatchQueue.main.async {

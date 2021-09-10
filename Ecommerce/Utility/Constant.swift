@@ -54,3 +54,5 @@ let colorGrayCaption:Color = Color(hex: "929292")
 //API
 
 let baseURL:String = "https://fakestoreapi.com"
+
+let limitProductNumber = 5

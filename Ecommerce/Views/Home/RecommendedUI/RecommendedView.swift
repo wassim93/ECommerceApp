@@ -28,12 +28,12 @@ struct RecommendedView: View {
                 })
             }
             TabView(selection: $currentIndex){
-                ForEach(hvm.products.prefix(5)) { prod in
+                ForEach(hvm.products) { prod in
                     RecommendedProductCell(product: prod)
                 }
                 .onReceive(timer, perform: { _ in
                     withAnimation {
-                        currentIndex = currentIndex < 5 ? currentIndex+1 : 0
+                        currentIndex = currentIndex < limitProductNumber ? currentIndex+1 : 0
                     }
                 })
             }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))

@@ -14,7 +14,7 @@ struct ContentView: View {
         VStack(spacing:10){
             switch viewRouter.currentPage {
                 case .home:
-                    HomeView()
+                    HomeView(hvm: hvm)
                 case .cart:
                     Spacer()
                     Text("cart")
