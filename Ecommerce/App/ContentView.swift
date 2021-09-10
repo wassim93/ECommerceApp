@@ -14,12 +14,7 @@ struct ContentView: View {
         VStack(spacing:10){
             switch viewRouter.currentPage {
                 case .home:
-                    ScrollView{
-                        NavBarView()
-                        CategorieView()
-                        RecommendedView()
-                        BestSellingView()
-                    }
+                    HomeView()
                 case .cart:
                     Spacer()
                     Text("cart")

@@ -8,7 +8,7 @@
 import Foundation
 
 final class NetworkManager<T:Codable>{
-    static func fetch(for url:URL, completion: @escaping(Result<T, NetworkError>)-> Void){
+    static func fetch(for url:URL, completion: @escaping(Result<[T], NetworkError>)-> Void){
                       
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard error == nil else {
@@ -27,7 +27,7 @@ final class NetworkManager<T:Codable>{
             }
             
             do{
-                let json = try JSONDecoder().decode(T.self,from: data)
+                let json = try JSONDecoder().decode([T].self,from: data)
                 completion(.success(json))
             }catch(let err){
                 print(String(describing: err))
