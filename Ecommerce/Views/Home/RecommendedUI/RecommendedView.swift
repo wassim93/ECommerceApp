@@ -9,6 +9,9 @@ import SwiftUI
 
 struct RecommendedView: View {
     @ObservedObject var hvm:HomeViewModel
+    private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    @State var currentIndex = 0
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             HStack {
@@ -24,10 +27,15 @@ struct RecommendedView: View {
                         .padding(15)
                 })
             }
-            TabView{
+            TabView(selection: $currentIndex){
                 ForEach(hvm.products.prefix(5)) { prod in
                     RecommendedProductCell(product: prod)
                 }
+                .onReceive(timer, perform: { _ in
+                    withAnimation {
+                        currentIndex = currentIndex < 5 ? currentIndex+1 : 0
+                    }
+                })
             }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
             .frame(height:280)
         }

@@ -10,8 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
     @ObservedObject var hvm:HomeViewModel = HomeViewModel()
-
-    
     var body: some View {
         VStack(spacing:10){
             switch viewRouter.currentPage {
