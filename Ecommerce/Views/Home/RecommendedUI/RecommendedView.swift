@@ -28,7 +28,7 @@ struct RecommendedView: View {
                 })
             }
             TabView(selection: $currentIndex){
-                ForEach(hvm.products) { prod in
+                ForEach(hvm.productsRecommend) { prod in
                     RecommendedProductCell(product: prod)
                 }
                 .onReceive(timer, perform: { _ in

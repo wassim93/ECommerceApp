@@ -6,24 +6,32 @@
 //
 
 import SwiftUI
-
+import Kingfisher
 struct ProductViewCell: View {
+    let product:Product
+    @ObservedObject var hvm:HomeViewModel
+
+
     var body: some View {
         VStack(alignment:.leading,spacing:5){
             ZStack {
-                Image("watch")
+                KFImage(URL(string: product.image))
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 150, alignment: .center)
                     .padding()
             }.background(colorGray)
             .cornerRadius(10)
-            Text("Watch for men")
+            Text(product.title)
                 .font(Font.custom("SFProDisplay-Medium", size: 16))
-            Text("Rolex swiss")
+                .frame(width:130)
+                .lineLimit(2)
+            Text(product.description)
                 .font(Font.custom("SFProDisplay-Regular", size: 12))
                 .foregroundColor(colorGrayCaption)
-            Text("750$")
+                .frame(width:130)
+                .lineLimit(3)
+            Text("\(hvm.getPriceFor(note: product.price))$")
                 .font(Font.custom("SFProDisplay-Medium", size: 16))
                 .foregroundColor(greenColor)
 
@@ -33,7 +41,7 @@ struct ProductViewCell: View {
 
 struct ProductViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        ProductViewCell()
+        ProductViewCell(product: Product(id: 1, title: "title", description: "description", image: "", price: 0.0, rating: Rating(rate: 0.0, count: "count")), hvm: HomeViewModel())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

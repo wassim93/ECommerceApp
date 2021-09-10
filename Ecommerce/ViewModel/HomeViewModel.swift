@@ -9,7 +9,9 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     var categories = [Categorie]()
-    @Published var products = [Product]()
+    @Published var productsRecommend = [Product]()
+    @Published var productsBest = [Product]()
+
     
     
     
@@ -17,6 +19,7 @@ class HomeViewModel: ObservableObject {
     init() {
         getCategories()
         getRecommended(limit: limitProductNumber)
+        getBestSelling()
     }
     
     
@@ -31,11 +34,29 @@ class HomeViewModel: ObservableObject {
             switch res{
                 case .success(let response) :
                     DispatchQueue.main.async {
-                        self.products = response
+                        self.productsRecommend = response
                     }
                 case .failure(let err):
                     print(err)
             }
         }
     }
+    
+    func getBestSelling() {
+        NetworkManager<Product>.fetch(for: URL(string: Api.bestSellingUrl)!) { (res) in
+            switch res{
+                case .success(let response) :
+                    DispatchQueue.main.async {
+                        self.productsBest = response
+                    }
+                case .failure(let err):
+                    print(err)
+            }
+        }
+    }
+    
+    func getPriceFor(note:Double) -> String {
+            
+            return String(format: "%.1f", note)
+        }
 }

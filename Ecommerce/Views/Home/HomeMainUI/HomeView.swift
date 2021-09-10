@@ -14,7 +14,7 @@ struct HomeView: View {
             NavBarView()
             CategorieView()
             RecommendedView(hvm: hvm)
-            BestSellingView()
+            BestSellingView(hvm: hvm)
         }
     }
 }

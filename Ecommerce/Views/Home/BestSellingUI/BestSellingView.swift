@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BestSellingView: View {
+    @ObservedObject var hvm:HomeViewModel
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             HStack {
@@ -25,18 +27,18 @@ struct BestSellingView: View {
             }
             ScrollView(.horizontal,showsIndicators: false) {
                 LazyHStack(spacing:0) {
-                    ForEach(0...12, id:\.self) { index in
-                        ProductViewCell()
+                    ForEach(hvm.productsBest.prefix(4)) { prod in
+                        ProductViewCell(product: prod,hvm:hvm)
                     }
                 }
-            }.frame(height: 250)
+            }
         }
     }
 }
 
 struct BestSellingView_Previews: PreviewProvider {
     static var previews: some View {
-        BestSellingView()
+        BestSellingView(hvm: HomeViewModel())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }
