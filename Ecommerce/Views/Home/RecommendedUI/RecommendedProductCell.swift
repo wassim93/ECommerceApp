@@ -11,17 +11,22 @@ import Kingfisher
 struct RecommendedProductCell: View {
     let product:Product
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 30)
-                .fill(appBackgroundMainColor)
-                .frame(height:260)
-                .shadow(color: .black.opacity(0.09), radius: 10, x: 0.0, y: 5)
-            KFImage(URL(string: product.image))
-                .resizable()
-                .scaledToFit()
-                .frame(height: 260, alignment: .center)
-
-        }.padding()
+        GeometryReader{ proxy in
+            ZStack {
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(appBackgroundMainColor)
+                    .frame(height:260)
+                KFImage(URL(string: product.image))
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 260, alignment: .center)
+                    .overlay(colorGrayCaption
+                                .opacity(0.1)
+                                .cornerRadius(30)
+                                .frame(width: proxy.size.width-20, height: 260, alignment: .center)
+                                .shadow(color: .black.opacity(0.5), radius: 5, x: 0.0, y: 5))
+            }.padding()
+        }
     }
 }
 

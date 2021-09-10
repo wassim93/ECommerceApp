@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject var hvm:HomeViewModel = HomeViewModel()
     var body: some View {
-        ScrollView{
+        ScrollView(showsIndicators:false){
             NavBarView()
             CategorieView()
             RecommendedView(hvm: hvm)
