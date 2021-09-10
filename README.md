@@ -12,6 +12,11 @@ ECommerce App built with SwiftUI
     API USED : https://fakestoreapi.com/
     Library used : KingFisher
     
+# Screenshots
+
+    HomeScreen 
+    <img src="https://github.com/wassim93/ECommerceApp/blob/main/Screenshots/home.gif" width=50% height=50%>
+    
     
     
     
