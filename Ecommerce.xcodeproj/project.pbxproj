@@ -34,6 +34,7 @@
 		CFF752F726EAAED300E95667 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752F626EAAED300E95667 /* Api.swift */; };
 		CFF752F926EAB4BF00E95667 /* RecommendedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752F826EAB4BF00E95667 /* RecommendedView.swift */; };
 		CFF752FB26EAB69800E95667 /* RecommendedProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */; };
+		CFF752FF26EAD21700E95667 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF752FE26EAD21700E95667 /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		CFF752F626EAAED300E95667 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		CFF752F826EAB4BF00E95667 /* RecommendedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedView.swift; sourceTree = "<group>"; };
 		CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedProductCell.swift; sourceTree = "<group>"; };
+		CFF752FE26EAD21700E95667 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,8 @@
 		CFCD579626E98041007BDE71 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CFF752FD26EAD1DD00E95667 /* User */,
+				CFF752FC26EAD1D600E95667 /* Cart */,
 				CFCD579E26E9823F007BDE71 /* Home */,
 			);
 			path = Views;
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				CFCD579C26E980EE007BDE71 /* Constant.swift */,
+				CFF752FE26EAD21700E95667 /* ViewRouter.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -263,6 +268,20 @@
 				CFCD57AA26E9899C007BDE71 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CFF752FC26EAD1D600E95667 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		CFF752FD26EAD1DD00E95667 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +433,7 @@
 				CFF752F926EAB4BF00E95667 /* RecommendedView.swift in Sources */,
 				CFF752FB26EAB69800E95667 /* RecommendedProductCell.swift in Sources */,
 				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
+				CFF752FF26EAD21700E95667 /* ViewRouter.swift in Sources */,
 				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
 				CFF752F726EAAED300E95667 /* Api.swift in Sources */,
 				CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */,

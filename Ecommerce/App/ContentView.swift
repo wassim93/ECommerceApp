@@ -8,24 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewRouter: ViewRouter
+    
     var body: some View {
-        ZStack{
-            VStack(spacing:10){
-                ScrollView{
-                    NavBarView()
-                    CategorieView()
-                    RecommendedView()
-                    BestSellingView()
+        VStack(spacing:10){
+            switch viewRouter.currentPage {
+                case .home:
+                    ScrollView{
+                        NavBarView()
+                        CategorieView()
+                        RecommendedView()
+                        BestSellingView()
                     }
-                FooterView()
-                    .padding(.horizontal,0)
-            }.background(appBackgroundMainColor)
-        }.ignoresSafeArea(.all,edges: [.top,.bottom])
+                case .cart:
+                    Spacer()
+                    Text("cart")
+                    Spacer()
+                case .user:
+                    Spacer()
+                    Text("User")
+                    Spacer()
+            }
+            FooterView(viewRouter: viewRouter)
+                .padding(.horizontal,0)
+        }.background(appBackgroundMainColor)
+        .ignoresSafeArea(.all,edges: [.top,.bottom])
     }
 }
 
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewRouter: ViewRouter())
     }
 }

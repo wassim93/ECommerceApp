@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct FooterView: View {
+    @StateObject var viewRouter: ViewRouter
     var body: some View {
         HStack (alignment: .center){
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                viewRouter.currentPage = .home
+            }, label: {
                     Text("Explore")
                         .font(Font.custom("SFProDisplay-Bold", size: 14))
                         .foregroundColor(.black)
             }).padding([.top,.leading,.bottom],30)
             Spacer()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                viewRouter.currentPage = .cart
+
+            }, label: {
                 Image("Icon_Cart")
             }).padding(30)
             Spacer()
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                viewRouter.currentPage = .user
+
+            }, label: {
                 Image("Icon_User")
             }).padding(30)
         }.background(colorWhite)
@@ -32,7 +41,7 @@ struct FooterView: View {
 
 struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
-        FooterView()
+        FooterView(viewRouter: ViewRouter())
             .previewLayout(.sizeThatFits)
             .background(Color.white)
     }
