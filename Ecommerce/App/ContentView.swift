@@ -14,7 +14,7 @@ struct ContentView: View {
         VStack(spacing:10){
             switch viewRouter.currentPage {
                 case .home:
-                    HomeView(hvm: hvm)
+                    HomeView(hvm: hvm, viewRouter: viewRouter)
                 case .cart:
                     Spacer()
                     Text("cart")
@@ -22,6 +22,14 @@ struct ContentView: View {
                 case .user:
                     Spacer()
                     Text("User")
+                    Spacer()
+                case .recommended:
+                    Spacer()
+                    AllRecommendedView()
+                    Spacer()
+                case .bestSelling:
+                    Spacer()
+                    Text("best")
                     Spacer()
             }
             FooterView(viewRouter: viewRouter)

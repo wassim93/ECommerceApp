@@ -18,4 +18,6 @@ enum Page {
      case home
      case cart
      case user
+     case recommended
+     case bestSelling
  }

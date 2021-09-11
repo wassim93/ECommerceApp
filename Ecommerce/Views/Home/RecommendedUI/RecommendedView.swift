@@ -9,6 +9,8 @@ import SwiftUI
 
 struct RecommendedView: View {
     @ObservedObject var hvm:HomeViewModel
+    @StateObject var viewRouter: ViewRouter
+    
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
     @State var currentIndex = 0
     
@@ -20,7 +22,11 @@ struct RecommendedView: View {
                     .foregroundColor(.black)
                     .padding(15)
                 Spacer()
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    withAnimation {
+                        viewRouter.currentPage = .recommended
+                    }
+                }, label: {
                     Text("See All")
                         .font(Font.custom("SFProDisplay-Regular", size: 16))
                         .foregroundColor(.black)
@@ -44,7 +50,7 @@ struct RecommendedView: View {
 
 struct RecommendedView_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendedView(hvm: HomeViewModel())
+        RecommendedView(hvm: HomeViewModel(), viewRouter: ViewRouter())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

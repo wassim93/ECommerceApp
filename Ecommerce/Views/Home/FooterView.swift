@@ -12,23 +12,27 @@ struct FooterView: View {
     var body: some View {
         HStack (alignment: .center){
             Button(action: {
-                viewRouter.currentPage = .home
+                withAnimation {
+                    viewRouter.currentPage = .home
+                }
             }, label: {
-                    Text("Explore")
-                        .font(Font.custom("SFProDisplay-Bold", size: 14))
-                        .foregroundColor(.black)
+                Text("Explore")
+                    .font(Font.custom("SFProDisplay-Bold", size: 14))
+                    .foregroundColor(.black)
             }).padding([.top,.leading,.bottom],30)
             Spacer()
             Button(action: {
-                viewRouter.currentPage = .cart
-
+                withAnimation {
+                    viewRouter.currentPage = .cart
+                }
             }, label: {
                 Image("Icon_Cart")
             }).padding(30)
             Spacer()
             Button(action: {
-                viewRouter.currentPage = .user
-
+                withAnimation {
+                    viewRouter.currentPage = .user
+                }
             }, label: {
                 Image("Icon_User")
             }).padding(30)
@@ -36,7 +40,7 @@ struct FooterView: View {
         .shadow(color: .black.opacity(0.1), radius: 5, x: 0.0, y: -5)
         
     }
-   
+    
 }
 
 struct FooterView_Previews: PreviewProvider {
