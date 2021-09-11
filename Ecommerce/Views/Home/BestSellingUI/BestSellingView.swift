@@ -23,6 +23,8 @@
                     Button(action: {
                         withAnimation {
                             viewRouter.currentPage = .bestSelling
+                            viewRouter.pageTitle = BEST_SELLING
+
                         }
                     }, label: {
                         Text("See All")

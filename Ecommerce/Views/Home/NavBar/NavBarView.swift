@@ -26,7 +26,7 @@ struct NavBarView: View {
             }).padding(.trailing,10)
 
         }.shadow(color: .black.opacity(0.2), radius: 5, x: 0, y: 5)
-        .padding(.top,UIApplication.shared.windows.first?.safeAreaInsets.top)
+        .padding(.top)
         .padding(.bottom)
         
     }

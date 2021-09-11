@@ -56,3 +56,12 @@ let colorGrayCaption:Color = Color(hex: "929292")
 let baseURL:String = "https://fakestoreapi.com"
 
 let limitProductNumber = 5
+
+let EXPLORE = "Explore"
+let CART = "Cart"
+let USER = "User"
+let RECOMMENDED = "Recommended"
+let BEST_SELLING = "Best Selling"
+
+
+

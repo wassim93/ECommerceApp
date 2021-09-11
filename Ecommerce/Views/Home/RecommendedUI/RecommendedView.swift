@@ -25,6 +25,8 @@ struct RecommendedView: View {
                 Button(action: {
                     withAnimation {
                         viewRouter.currentPage = .recommended
+                        viewRouter.pageTitle = RECOMMENDED
+
                     }
                 }, label: {
                     Text("See All")

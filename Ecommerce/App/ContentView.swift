@@ -11,33 +11,35 @@ struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
     @ObservedObject var hvm:HomeViewModel = HomeViewModel()
     var body: some View {
-        VStack(spacing:10){
-            switch viewRouter.currentPage {
-                case .home:
-                    HomeView(hvm: hvm, viewRouter: viewRouter)
-                case .cart:
-                    Spacer()
-                    Text("cart")
-                    Spacer()
-                case .user:
-                    Spacer()
-                    Text("User")
-                    Spacer()
-                case .recommended:
-                    Spacer()
-                    AllRecommendedView()
-                    Spacer()
-                case .bestSelling:
-                    Spacer()
-                    Text("best")
-                    Spacer()
+            VStack(spacing:10){
+                TitleView(viewRouter: viewRouter)
+                switch viewRouter.currentPage {
+                    case .home:
+                        HomeView(hvm: hvm, viewRouter: viewRouter)
+                    case .cart:
+                        Spacer()
+                        Text("cart")
+                        Spacer()
+                    case .user:
+                        Spacer()
+                        Text("User")
+                        Spacer()
+                    case .recommended:
+                        Spacer()
+                        AllRecommendedView()
+                        Spacer()
+                    case .bestSelling:
+                        Spacer()
+                        Text("best")
+                        Spacer()
+                }
+                FooterView(viewRouter: viewRouter)
+                    .padding(.horizontal,0)
             }
-            FooterView(viewRouter: viewRouter)
-                .padding(.horizontal,0)
-        }.background(appBackgroundMainColor)
-        .ignoresSafeArea(.all,edges: [.top,.bottom])
+            .ignoresSafeArea(.all,edges: [.top,.bottom])
+        }
     }
-}
+
 
 
 struct ContentView_Previews: PreviewProvider {

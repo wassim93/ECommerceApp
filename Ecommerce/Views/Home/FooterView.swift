@@ -14,6 +14,7 @@ struct FooterView: View {
             Button(action: {
                 withAnimation {
                     viewRouter.currentPage = .home
+                    viewRouter.pageTitle = EXPLORE
                 }
             }, label: {
                 Text("Explore")
@@ -24,7 +25,9 @@ struct FooterView: View {
             Button(action: {
                 withAnimation {
                     viewRouter.currentPage = .cart
-                }
+                    viewRouter.pageTitle = CART
+
+               }
             }, label: {
                 Image("Icon_Cart")
             }).padding(30)
@@ -32,6 +35,8 @@ struct FooterView: View {
             Button(action: {
                 withAnimation {
                     viewRouter.currentPage = .user
+                    viewRouter.pageTitle = USER
+
                 }
             }, label: {
                 Image("Icon_User")

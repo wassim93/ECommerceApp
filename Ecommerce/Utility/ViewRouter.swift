@@ -10,6 +10,8 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
     @Published var currentPage: Page = .home
+    @Published var pageTitle = EXPLORE
+
 
 }
 
@@ -21,3 +23,5 @@ enum Page {
      case recommended
      case bestSelling
  }
+
+
