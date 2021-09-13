@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF0EC9AE26EF56B0003AC86F /* AllRecommendedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EC9AD26EF56B0003AC86F /* AllRecommendedCell.swift */; };
+		CF0EC9B026EF637E003AC86F /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0EC9AF26EF637E003AC86F /* ProductDetailView.swift */; };
 		CF16D9DA26EA3C9B003CCCA0 /* CategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */; };
 		CF16D9DC26EA3D8A003CCCA0 /* CategorieCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */; };
 		CF16D9DE26EA43DD003CCCA0 /* Categorie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */; };
@@ -61,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF0EC9AD26EF56B0003AC86F /* AllRecommendedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRecommendedCell.swift; sourceTree = "<group>"; };
+		CF0EC9AF26EF637E003AC86F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		CF16D9D926EA3C9A003CCCA0 /* CategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieView.swift; sourceTree = "<group>"; };
 		CF16D9DB26EA3D8A003CCCA0 /* CategorieCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorieCellView.swift; sourceTree = "<group>"; };
 		CF16D9DD26EA43DD003CCCA0 /* Categorie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categorie.swift; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 				CFF752F826EAB4BF00E95667 /* RecommendedView.swift */,
 				CFF752FA26EAB69800E95667 /* RecommendedProductCell.swift */,
 				CFF7501126EC2D6600385BEF /* AllRecommendedView.swift */,
+				CF0EC9AD26EF56B0003AC86F /* AllRecommendedCell.swift */,
+				CF0EC9AF26EF637E003AC86F /* ProductDetailView.swift */,
 			);
 			path = RecommendedUI;
 			sourceTree = "<group>";
@@ -501,12 +507,14 @@
 				CFCD57B726E99C6B007BDE71 /* Extensions.swift in Sources */,
 				CFCD57A026E98264007BDE71 /* FooterView.swift in Sources */,
 				CFCD576C26E97F94007BDE71 /* EcommerceApp.swift in Sources */,
+				CF0EC9AE26EF56B0003AC86F /* AllRecommendedCell.swift in Sources */,
 				CF17516926EB6DDE00A29C96 /* HomeView.swift in Sources */,
 				CF16D9E526EA606E003CCCA0 /* ProductViewCell.swift in Sources */,
 				CF17516D26EB708800A29C96 /* Rating.swift in Sources */,
 				CFF752F926EAB4BF00E95667 /* RecommendedView.swift in Sources */,
 				CFF752FB26EAB69800E95667 /* RecommendedProductCell.swift in Sources */,
 				CFCD57B526E9954E007BDE71 /* NavBarView.swift in Sources */,
+				CF0EC9B026EF637E003AC86F /* ProductDetailView.swift in Sources */,
 				CFF752FF26EAD21700E95667 /* ViewRouter.swift in Sources */,
 				CFCD579D26E980EE007BDE71 /* Constant.swift in Sources */,
 				CFF7501226EC2D6600385BEF /* AllRecommendedView.swift in Sources */,

@@ -26,7 +26,7 @@ struct ContentView: View {
                         Spacer()
                     case .recommended:
                         Spacer()
-                        AllRecommendedView()
+                        AllRecommendedView(hvm: hvm)
                         Spacer()
                     case .bestSelling:
                         Spacer()
