@@ -1,5 +1,15 @@
 name: SwiftLint
-
+disabled_rules:
+  - force_cast
+  - force_try
+  - function_body_length
+  - line_length
+  - nesting
+  - todo
+  - type_body_length
+  - type_name
+  - variable_name
+  - variable_name_min_length
 on:
   push:
     branches:
