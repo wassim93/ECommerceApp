@@ -22,6 +22,7 @@ enum Page {
      case user
      case recommended
      case bestSelling
+     case detail
  }
 
 

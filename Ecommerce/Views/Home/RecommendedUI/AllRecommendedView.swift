@@ -9,16 +9,17 @@
     
     struct AllRecommendedView: View {
         private let gridItems :[GridItem] = Array(repeating: .init(.flexible(),spacing:5), count: 2)
-        @ObservedObject var hvm:HomeViewModel
+        @StateObject var hvm:HomeViewModel
+        @StateObject var viewRouter: ViewRouter
+        
         
         var body: some View {
-            NavigationView{
-                ScrollView{
-                    LazyVGrid(columns: gridItems){
-                        ForEach(hvm.productsRecommend) { prod in
-                            NavigationLink(destination: ProductDetailView()) {
-                                AllRecommendedCell(product: prod, hvm: hvm)
-                            }
+            ScrollView{
+                LazyVGrid(columns: gridItems){
+                    ForEach(hvm.productsRecommend) { prod in
+                        AllRecommendedCell(product: prod, hvm: hvm).onTapGesture {
+                            viewRouter.currentPage = .detail
+                            hvm.setSelectedProd(prod: prod)
                         }
                     }
                 }
@@ -28,7 +29,7 @@
     
     struct AllRecommendedView_Previews: PreviewProvider {
         static var previews: some View {
-            AllRecommendedView(hvm: HomeViewModel())
+            AllRecommendedView(hvm: HomeViewModel(), viewRouter: ViewRouter())
                 .previewLayout(.sizeThatFits)
                 .background(appBackgroundMainColor)
         }

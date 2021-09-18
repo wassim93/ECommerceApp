@@ -8,7 +8,7 @@
     import SwiftUI
     
     struct BestSellingView: View {
-        @ObservedObject var hvm:HomeViewModel
+        @StateObject var hvm:HomeViewModel
         @StateObject var viewRouter: ViewRouter
         
         

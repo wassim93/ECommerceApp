@@ -12,8 +12,8 @@ struct FooterView: View {
     var body: some View {
         HStack (alignment: .center){
             Button(action: {
+                viewRouter.currentPage = .home
                 withAnimation {
-                    viewRouter.currentPage = .home
                     viewRouter.pageTitle = EXPLORE
                 }
             }, label: {
@@ -23,20 +23,18 @@ struct FooterView: View {
             }).padding([.top,.leading,.bottom],30)
             Spacer()
             Button(action: {
+                viewRouter.currentPage = .cart
                 withAnimation {
-                    viewRouter.currentPage = .cart
                     viewRouter.pageTitle = CART
-
-               }
+                }
             }, label: {
                 Image("Icon_Cart")
             }).padding(30)
             Spacer()
             Button(action: {
+                viewRouter.currentPage = .user
                 withAnimation {
-                    viewRouter.currentPage = .user
                     viewRouter.pageTitle = USER
-
                 }
             }, label: {
                 Image("Icon_User")

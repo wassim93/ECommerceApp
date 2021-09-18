@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategorieView: View {
     
-    @ObservedObject var hvm:HomeViewModel = HomeViewModel()
+    @StateObject var hvm:HomeViewModel
     var body: some View {
         VStack(alignment: .leading, spacing: 0){
             Text("Categories")
@@ -32,7 +32,7 @@ struct CategorieView: View {
 
 struct CategorieView_Previews: PreviewProvider {
     static var previews: some View {
-        CategorieView()
+        CategorieView(hvm: HomeViewModel())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

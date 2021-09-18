@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RecommendedView: View {
-    @ObservedObject var hvm:HomeViewModel
+    @StateObject var hvm:HomeViewModel
     @StateObject var viewRouter: ViewRouter
     
     private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()

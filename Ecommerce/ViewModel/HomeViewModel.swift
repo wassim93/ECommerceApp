@@ -11,15 +11,24 @@ class HomeViewModel: ObservableObject {
     var categories = [Categorie]()
     @Published var productsRecommend = [Product]()
     @Published var productsBest = [Product]()
+    @Published var selectedProd = Product(id: 1, title: "default", description: "default", image: "", price: 0.0, rating: Rating(rate: 0.0, count: ""))
 
     
     
     
     
     init() {
+
         getCategories()
         getRecommended(limit: limitProductNumber)
         getBestSelling()
+    }
+    
+    
+    func setSelectedProd(prod:Product) {
+        DispatchQueue.main.async {
+            self.selectedProd = prod
+        }
     }
     
     

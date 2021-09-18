@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
-    @ObservedObject var hvm:HomeViewModel = HomeViewModel()
+    @StateObject var hvm:HomeViewModel = HomeViewModel()
     var body: some View {
             VStack(spacing:10){
                 TitleView(viewRouter: viewRouter)
@@ -26,11 +26,15 @@ struct ContentView: View {
                         Spacer()
                     case .recommended:
                         Spacer()
-                        AllRecommendedView(hvm: hvm)
+                        AllRecommendedView(hvm: hvm, viewRouter: viewRouter)
                         Spacer()
                     case .bestSelling:
                         Spacer()
                         Text("best")
+                        Spacer()
+                    case .detail:
+                        Spacer()
+                        ProductDetailView(hvm: hvm)
                         Spacer()
                 }
                 FooterView(viewRouter: viewRouter)
