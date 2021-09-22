@@ -10,7 +10,8 @@ ECommerce App built with SwiftUI
 # Project 
     Project Architecture : MVVM
     API USED : https://fakestoreapi.com/
-    Library used : KingFisher
+    Library used : - KingFisher With SPM
+                   - Swiftlint with Pod 
     
 # Screenshots
 
