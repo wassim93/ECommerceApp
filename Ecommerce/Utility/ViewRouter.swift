@@ -24,5 +24,3 @@ enum Page {
      case bestSelling
      case detail
  }
-
-

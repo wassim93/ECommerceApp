@@ -13,7 +13,7 @@
         
         
         var body: some View {
-            VStack(alignment: .leading, spacing: 0){
+            VStack(alignment: .leading, spacing: 0) {
                 HStack {
                     Text("Best Selling")
                         .font(Font.custom("SFProDisplay-Bold", size: 18))
@@ -24,7 +24,7 @@
                         withAnimation {
                             viewRouter.currentPage = .bestSelling
                             viewRouter.pageTitle = BEST_SELLING
-
+                            
                         }
                     }, label: {
                         Text("See All")

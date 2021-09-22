@@ -11,7 +11,7 @@ struct CategorieCellView: View {
     var categorie:Categorie
     var body: some View {
         VStack(spacing:12) {
-            ZStack{
+            ZStack {
                 Circle().fill(appBackgroundMainColor).frame(width: 70, height: 70, alignment: .center)
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Image(categorie.image)

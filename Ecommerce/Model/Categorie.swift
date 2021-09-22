@@ -12,4 +12,3 @@ struct Categorie: Codable,Identifiable {
     let name:String
     let image:String
 }
-

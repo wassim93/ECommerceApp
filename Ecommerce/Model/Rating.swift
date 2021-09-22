@@ -7,11 +7,10 @@
 
 import SwiftUI
 
-
 struct Rating : Codable {
     let rate: Double
     let count: String
-    
+
     enum CodingKey : String {
         case rate
         case count
@@ -20,8 +19,8 @@ struct Rating : Codable {
         self.rate = rate
         self.count = count
     }
-    
-     init(from decoder: Decoder) throws {
+
+    init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         rate = try container.decode(Double.self, forKey: .rate)
         do {
@@ -30,5 +29,4 @@ struct Rating : Codable {
             count = try container.decode(String.self, forKey: .count)
         }
     }
-    
 }

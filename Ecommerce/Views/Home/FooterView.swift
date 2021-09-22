@@ -10,7 +10,7 @@ import SwiftUI
 struct FooterView: View {
     @StateObject var viewRouter: ViewRouter
     var body: some View {
-        HStack (alignment: .center){
+        HStack(alignment: .center) {
             Button(action: {
                 viewRouter.currentPage = .home
                 withAnimation {

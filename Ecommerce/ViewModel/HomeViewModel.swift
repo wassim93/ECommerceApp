@@ -11,10 +11,10 @@ class HomeViewModel: ObservableObject {
     var categories = [Categorie]()
     @Published var productsRecommend = [Product]()
     @Published var productsBest = [Product]()
-    @Published var selectedProd = Product(id: 1, title: "default", description: "default", image: "", price: 0.0, rating: Rating(rate: 0.0, count: ""))
+    @Published var selectedProd = Product(id: 1, title: "default",
+                                          description: "default", image: "",
+                                          price: 0.0, rating: Rating(rate: 0.0, count: ""))
 
-    
-    
     
     
     init() {
@@ -40,12 +40,12 @@ class HomeViewModel: ObservableObject {
     
     func getRecommended(limit:Int?) {
         NetworkManager<Product>.fetch(for: URL(string: Api.getProducts(limit: limit))!) { (res) in
-            switch res{
-                case .success(let response) :
+            switch res {
+            case .success(let response) :
                     DispatchQueue.main.async {
                         self.productsRecommend = response
                     }
-                case .failure(let err):
+            case .failure(let err):
                     print(err)
             }
         }
@@ -53,19 +53,19 @@ class HomeViewModel: ObservableObject {
     
     func getBestSelling() {
         NetworkManager<Product>.fetch(for: URL(string: Api.bestSellingUrl)!) { (res) in
-            switch res{
-                case .success(let response) :
+            switch res {
+            case .success(let response) :
                     DispatchQueue.main.async {
                         self.productsBest = response
                     }
-                case .failure(let err):
+            case .failure(let err):
                     print(err)
             }
         }
     }
     
     func getPriceFor(note:Double) -> String {
-            
-            return String(format: "%.1f", note)
-        }
+
+        return String(format: "%.1f", note)
+    }
 }

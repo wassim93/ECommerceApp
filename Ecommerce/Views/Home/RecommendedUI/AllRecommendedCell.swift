@@ -14,7 +14,7 @@ struct AllRecommendedCell: View {
     
     
     var body: some View {
-        VStack(alignment: .center, spacing: 5){
+        VStack(alignment: .center, spacing: 5) {
             KFImage(URL(string: product.image))
                 .resizable()
                 .scaledToFit()
@@ -47,7 +47,12 @@ struct AllRecommendedCell: View {
 
 struct AllRecommendedCell_Previews: PreviewProvider {
     static var previews: some View {
-        AllRecommendedCell(product: Product(id: 1, title: "prod title prod titleprod titleprod titleprod titleprod titleprod titleprod title", description: "prod desc prod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod titleprod title", image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg", price: 0.0, rating: Rating(rate: 0.0, count: "")), hvm: HomeViewModel()).previewLayout(.sizeThatFits)
+        AllRecommendedCell(product: Product(id: 1,
+                                            title: "prod title prod titleprod titleprod titleprod titlepro",
+                                            description: "prod desc prod titleprod titleprod titleprod titl",
+                                            image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+                                            price: 0.0, rating: Rating(rate: 0.0, count: "")),
+                           hvm: HomeViewModel()).previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }
 }

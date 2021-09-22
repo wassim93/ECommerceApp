@@ -15,7 +15,7 @@ struct RecommendedView: View {
     @State var currentIndex = 0
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0){
+        VStack(alignment: .leading, spacing: 0) {
             HStack {
                 Text("Recommended")
                     .font(Font.custom("SFProDisplay-Bold", size: 18))
@@ -35,7 +35,7 @@ struct RecommendedView: View {
                         .padding(15)
                 })
             }
-            TabView(selection: $currentIndex){
+            TabView(selection: $currentIndex) {
                 ForEach(hvm.productsRecommend) { prod in
                     RecommendedProductCell(product: prod)
                 }

@@ -8,16 +8,15 @@
 import Foundation
 
 
-struct Api{
+struct Api {
     static let productUrl = "\(baseURL)/products"
     static let limitedProductUrl = "\(baseURL)/products?limit"
     static let bestSellingUrl = "\(baseURL)/products/category/electronics"
-    
-    
+
     static func getProducts(limit:Int?) -> String {
         if limit == nil {
             return productUrl
-        }else{
+        } else {
             return "\(limitedProductUrl)=\(limit!)"
         }
     }

@@ -12,7 +12,7 @@ struct HomeView: View {
     @StateObject var viewRouter: ViewRouter
 
     var body: some View {
-            ScrollView(showsIndicators:false){
+            ScrollView(showsIndicators:false) {
                 NavBarView()
                 CategorieView(hvm: hvm)
                 RecommendedView(hvm: hvm, viewRouter: viewRouter)

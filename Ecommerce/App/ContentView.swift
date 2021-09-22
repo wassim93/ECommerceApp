@@ -11,28 +11,28 @@ struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
     @StateObject var hvm:HomeViewModel = HomeViewModel()
     var body: some View {
-            VStack(spacing:10){
+            VStack(spacing: 10) {
                 TitleView(viewRouter: viewRouter)
                 switch viewRouter.currentPage {
-                    case .home:
+                case .home:
                         HomeView(hvm: hvm, viewRouter: viewRouter)
-                    case .cart:
+                case .cart:
                         Spacer()
                         Text("cart")
                         Spacer()
-                    case .user:
+                case .user:
                         Spacer()
                         Text("User")
                         Spacer()
-                    case .recommended:
+                case .recommended:
                         Spacer()
                         AllRecommendedView(hvm: hvm, viewRouter: viewRouter)
                         Spacer()
-                    case .bestSelling:
+                case .bestSelling:
                         Spacer()
                         Text("best")
                         Spacer()
-                    case .detail:
+                case .detail:
                         Spacer()
                         ProductDetailView(hvm: hvm)
                         Spacer()

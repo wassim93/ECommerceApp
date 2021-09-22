@@ -11,7 +11,7 @@ import Kingfisher
 struct RecommendedProductCell: View {
     let product:Product
     var body: some View {
-        GeometryReader{ proxy in
+        GeometryReader { proxy in
             ZStack {
                 RoundedRectangle(cornerRadius: 30)
                     .fill(appBackgroundMainColor)
@@ -32,7 +32,10 @@ struct RecommendedProductCell: View {
 
 struct RecommendedProductCell_Previews: PreviewProvider {
     static var previews: some View {
-        RecommendedProductCell(product: Product(id: 1, title: "", description: "", image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg", price: 0.0, rating: Rating(rate: 0.0, count: "")))
+        RecommendedProductCell(product: Product(id: 1,
+                                                title: "", description: "",
+                                                image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+                                                price: 0.0, rating: Rating(rate: 0.0, count: "")))
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

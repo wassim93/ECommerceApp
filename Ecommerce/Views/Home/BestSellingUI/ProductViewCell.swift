@@ -13,7 +13,7 @@ struct ProductViewCell: View {
 
 
     var body: some View {
-        VStack(alignment:.leading,spacing:5){
+        VStack(alignment:.leading,spacing:5) {
             ZStack {
                 KFImage(URL(string: product.image))
                     .resizable()
@@ -41,7 +41,10 @@ struct ProductViewCell: View {
 
 struct ProductViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        ProductViewCell(product: Product(id: 1, title: "title", description: "description", image: "", price: 0.0, rating: Rating(rate: 0.0, count: "count")), hvm: HomeViewModel())
+        ProductViewCell(product: Product(id: 1, title: "title",
+                                         description: "description", image: "",
+                                         price: 0.0, rating: Rating(rate: 0.0, count: "count")),
+                        hvm: HomeViewModel())
             .previewLayout(.sizeThatFits)
             .background(appBackgroundMainColor)
     }

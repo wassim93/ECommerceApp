@@ -11,7 +11,7 @@ struct CategorieView: View {
     
     @StateObject var hvm:HomeViewModel
     var body: some View {
-        VStack(alignment: .leading, spacing: 0){
+        VStack(alignment: .leading, spacing: 0) {
             Text("Categories")
                 .font(Font.custom("SFProDisplay-Bold", size: 18))
                 .foregroundColor(.black)

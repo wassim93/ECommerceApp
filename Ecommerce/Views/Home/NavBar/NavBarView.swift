@@ -11,9 +11,9 @@ struct NavBarView: View {
     @State private var searchTxt = ""
 
     var body: some View {
-        HStack(alignment: .center,spacing:10){
+        HStack(alignment: .center,spacing:10) {
             
-            ZStack(alignment: .leading){
+            ZStack(alignment: .leading) {
                 Image("Icon_Search")
                     .padding(12)
                 TextField("", text: $searchTxt)

@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-//DATA
+// DATA
 
 let categoriesData:[Categorie] = [.init(id: 1, name: "Men", image: "Icon_User"),
-                              .init(id: 2, name: "Women", image: "Icon_Womens"),
-                              .init(id: 3, name: "Devices", image: "Icon_Devices"),
-                              .init(id: 4, name: "Gadgets", image: "Icon_Gadgets"),
-                              .init(id: 5, name: "Gaming", image: "Icon_Gaming")]
+                                  .init(id: 2, name: "Women", image: "Icon_Womens"),
+                                  .init(id: 3, name: "Devices", image: "Icon_Devices"),
+                                  .init(id: 4, name: "Gadgets", image: "Icon_Gadgets"),
+                                  .init(id: 5, name: "Gaming", image: "Icon_Gaming")]
 
 
-//COLOR
+// COLOR
 
 let colorBackground:Color = Color("ColorBackground")
 let colorGray:Color = Color(hex: "F1F1F1")
@@ -30,28 +30,28 @@ let colorGrayCaption:Color = Color(hex: "929292")
 
 
 
-//LAYOUT
+// LAYOUT
 
-//UX
+// UX
 
 
-//IMAGE
+// IMAGE
 
-//FONt
+// FONt
 
 /*SF Pro Display
-== SFProDisplay-Regular
-== SFProDisplay-LightItalic
-== SFProDisplay-Medium
-== SFProDisplay-SemiboldItalic
-== SFProDisplay-Bold
-== SFProDisplay-HeavyItalic
-== SFProDisplay-BlackItalic
-*/
+ == SFProDisplay-Regular
+ == SFProDisplay-LightItalic
+ == SFProDisplay-Medium
+ == SFProDisplay-SemiboldItalic
+ == SFProDisplay-Bold
+ == SFProDisplay-HeavyItalic
+ == SFProDisplay-BlackItalic
+ */
 
-//STRING
+// STRING
 
-//API
+// API
 
 let baseURL:String = "https://fakestoreapi.com"
 
@@ -62,6 +62,3 @@ let CART = "Cart"
 let USER = "User"
 let RECOMMENDED = "Recommended"
 let BEST_SELLING = "Best Selling"
-
-
-
