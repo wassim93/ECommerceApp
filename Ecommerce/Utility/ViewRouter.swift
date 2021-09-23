@@ -10,6 +10,7 @@ import SwiftUI
 
 class ViewRouter: ObservableObject {
     @Published var currentPage: Page = .home
+    @Published var previousPage: Page = .home
     @Published var pageTitle = EXPLORE
 
 

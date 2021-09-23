@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var viewRouter: ViewRouter
     @StateObject var hvm:HomeViewModel = HomeViewModel()
+    @State var isHidden = false
+    @State var isBackHidden = true
     var body: some View {
             VStack(spacing: 10) {
-                TitleView(viewRouter: viewRouter)
+                TitleView(viewRouter: viewRouter, isBackHidden: $isBackHidden)
                 switch viewRouter.currentPage {
                 case .home:
                         HomeView(hvm: hvm, viewRouter: viewRouter)
@@ -34,10 +36,10 @@ struct ContentView: View {
                         Spacer()
                 case .detail:
                         Spacer()
-                        ProductDetailView(hvm: hvm)
+                    ProductDetailView(hvm: hvm,isHidden: $isHidden, isBackHidden: $isBackHidden)
                         Spacer()
                 }
-                FooterView(viewRouter: viewRouter)
+                FooterView(viewRouter: viewRouter, isHidden: $isHidden)
                     .padding(.horizontal,0)
             }
             .ignoresSafeArea(.all,edges: [.top,.bottom])

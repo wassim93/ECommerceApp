@@ -19,6 +19,7 @@
                     ForEach(hvm.productsRecommend) { prod in
                         AllRecommendedCell(product: prod, hvm: hvm).onTapGesture {
                             viewRouter.currentPage = .detail
+                            viewRouter.previousPage = .recommended
                             hvm.setSelectedProd(prod: prod)
                         }
                     }
