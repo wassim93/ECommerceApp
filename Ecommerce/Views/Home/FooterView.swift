@@ -9,9 +9,9 @@ import SwiftUI
 
 struct FooterView: View {
     @StateObject var viewRouter: ViewRouter
-    @Binding var isHidden:Bool
+    @Binding var isTabHidden:Bool
     var body: some View {
-        if !isHidden {
+        if !isTabHidden {
             HStack(alignment: .center) {
                 Button(action: {
                     viewRouter.currentPage = .home
@@ -52,7 +52,7 @@ struct FooterView: View {
 
 struct FooterView_Previews: PreviewProvider {
     static var previews: some View {
-        FooterView(viewRouter: ViewRouter(), isHidden: .constant(false))
+        FooterView(viewRouter: ViewRouter(), isTabHidden: .constant(false))
             .previewLayout(.sizeThatFits)
             .background(Color.white)
     }
