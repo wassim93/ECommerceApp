@@ -26,6 +26,7 @@ let colorWhite:Color = Color(.white)
 let appBackgroundMainColor:Color = Color(hex: "FDFDFD")
 let greenColor:Color = Color(hex: "00C569")
 let colorGrayCaption:Color = Color(hex: "929292")
+let mainColorGreen:Color = Color(hex: "05cc6d")
 
 
 

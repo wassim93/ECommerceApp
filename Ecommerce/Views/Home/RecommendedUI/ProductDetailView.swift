@@ -16,25 +16,23 @@ struct ProductDetailView: View {
 
 
     var body: some View {
-
+        ScrollView {
             VStack {
-                KFImage(URL(string: hvm.selectedProd.image))
-                    .placeholder { Color.gray }
-                    .resizable()
-                    .scaledToFit()
-                    .overlay(NavBarTop(),alignment: .topLeading)
-
-                Text(hvm.selectedProd.title)
-                Spacer()
-
-            }.ignoresSafeArea(.all,edges: [.top])
-        .onAppear {
-            isTabHidden.toggle()
-            isTitleViewHidden.toggle()
-        }
-        .onDisappear {
-            isTabHidden.toggle()
-            isTitleViewHidden.toggle()
+                    KFImage(URL(string: "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"))
+                        .resizable()
+                        .aspectRatio(contentMode: .fit).padding([.top],30)
+                        .overlay(NavBarTop(),alignment: .topLeading)
+                    Text(hvm.selectedProd.title)
+                    Spacer()
+                }
+        }.ignoresSafeArea(.all,edges: [.top])
+            .onAppear {
+                isTabHidden.toggle()
+                isTitleViewHidden.toggle()
+            }
+            .onDisappear {
+                isTabHidden.toggle()
+                isTitleViewHidden.toggle()
         }
     }
 }
@@ -46,8 +44,9 @@ struct NavBarTop:View {
             HStack {
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                     Image(systemName: "chevron.backward")
+                        .font(.system(size: 25))
                         .padding()
-                        .foregroundColor(.white)
+                        .foregroundColor(mainColorGreen)
                         .frame(width: 80, height: 80, alignment: .leading)
 
                 })
@@ -57,12 +56,12 @@ struct NavBarTop:View {
                         .padding()
                         .foregroundColor(.white)
                         .frame(width: 50, height: 50, alignment: .center)
-                        .background(Color.red)
+                        .background(mainColorGreen)
                         .cornerRadius(25)
 
                 })
             }
-        }.padding(25)
+        }.padding(15)
     }
 }
 
